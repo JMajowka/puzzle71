@@ -127,7 +127,7 @@ void ripemd160_32(const uint8_t *in, uint8_t out[20]) {
              ((uint32_t)buf[i*4+1]<<8)|(uint32_t)buf[i*4];
     uint32_t al=h0,bl=h1,cl=h2,dl=h3,el=h4;
     uint32_t ar=h0,br=h1,cr=h2,dr=h3,er=h4;
-    uint32_t t,f,fl,fr;
+    uint32_t t,fl,fr;
     for(int i=0;i<80;i++){
         int r=i/16;
         if(r==0){fl=F1(bl,cl,dl); fr=F5(br,cr,dr);}
