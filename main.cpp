@@ -10,7 +10,7 @@
 #include <signal.h>
 
 // ─── Declaração do kernel (definido em kernel.cu) ───────────────────────────
-extern "C" __global__ void search_kernel(
+__global__ void search_kernel(
     const uint64_t range_start_lo,
     const uint64_t range_start_hi,
     const uint64_t range_size_lo,
